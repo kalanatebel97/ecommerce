@@ -6,6 +6,8 @@ from .views import ProductViewSet
 router = DefaultRouter()
 router.register(r'api/products', views.ProductViewSet, )
 router.register(r'api/categories', views.CategoryViewSet, )
+router.register(r'api/cart', views.CartViewSet, )
+router.register(r'api/cartItems', views.CartItemViewSet, )
 
 urlpatterns = [
     path('index/',views.index , name = "index"),
