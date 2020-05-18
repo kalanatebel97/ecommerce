@@ -1,19 +1,23 @@
 from django.contrib.auth.forms import UserCreationForm,UserChangeForm
-from django.contrib.auth import login, authenticate
 from django import forms
 from .models import CustomUser
 
-# from store.models import CustomUser
-
-
 class RegisterForm(UserCreationForm):
-    mobile_number = forms.CharField()
+    mobile_number = forms.IntegerField()
     city = forms.CharField()
 
     class Meta(UserCreationForm):
       model = CustomUser
-      fields = ["username", "email" ,"mobile_number","city"]
-
+      fields = (
+          "username",
+          "first_name",
+          "last_name",
+          "email",
+          "mobile_number",
+          "city",
+          "password1",
+          "password2"
+      )
 # class CustomUserChangeForm(UserChangeForm):
 #
 #     class Meta:

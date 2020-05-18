@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'rest_framework_simplejwt',
     'oauth2_provider',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -93,9 +94,9 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
+
     ],
-    # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    # 'PAGE_SIZE': 100
+
 }
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

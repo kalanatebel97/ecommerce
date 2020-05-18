@@ -16,12 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include, re_path
-from rest_framework.authtoken import views
+from rest_framework.authtoken import views as authviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('store.urls')),
-    url(r'^api-token-auth/', views.obtain_auth_token),
+    url(r'^api-token-auth/', authviews.obtain_auth_token),
     url(r'^auth/', include('djoser.urls')),
 
 ]

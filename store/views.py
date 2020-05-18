@@ -1,5 +1,5 @@
 from django.contrib.auth.forms import UserCreationForm
-from django.http import response
+from django.http import response, request
 from django.shortcuts import render, redirect
 from rest_framework.decorators import action
 from rest_framework.filters import SearchFilter,OrderingFilter
@@ -51,8 +51,16 @@ def register(response):
     if response.method == "POST":
         form = RegisterForm(response.POST)
         if form.is_valid():
-         form.save()
-        return redirect('/')
+              form.save()
+              # username = form.cleaned_data.get('username')
+              # first_name = form.cleaned_data.get('first_name')
+              # last_name = form.cleaned_data.get('last_name')
+              # email = form.cleaned_data.get('email')
+              # mobile_number = form.cleaned_data.get('mobile_number')
+              # city = form.cleaned_data.get('city')
+              # raw_password = form.cleaned_data.get('password1')
+              # user = authenticate(username=username, password=raw_password)
+        return redirect('/login')
     else:
         form = RegisterForm()
     return render(response,'store/register.html',{"form": form})

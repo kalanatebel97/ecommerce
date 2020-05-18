@@ -5791,3 +5791,10 @@ label {
     color: #ffba00; }
 
 /*# sourceMappingURL=main.css.map */
+.errorlist.nonfield {
+    color: salmon;
+}
+.errorlist{
+ color: salmon;
+ text-align: left;
+}
