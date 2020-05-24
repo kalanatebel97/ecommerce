@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f2088ed-7685-48ff-990e-9a07f629fc36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/js/category_list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/ProductFilter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/pagination.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/category_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/products_list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/templates/store/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +23,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-30" />
+    <option name="y" value="40" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
   <component name="ProjectId" id="1bc4qnmIrlGvOJyj1H37ozqNHCm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,8 +40,10 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecommerceApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -59,10 +61,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588918241066</updated>
+      <workItem from="1590324917188" duration="525000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1879000" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="360" y="74" key="#Custom_Plugin_Repositories" timestamp="1590324577291">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="74" key="#Custom_Plugin_Repositories/0.0.1536.824@0.0.1536.824" timestamp="1590324577291" />
     <state x="497" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589256226226">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -75,6 +88,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590298117424" />
+    <state x="279" y="58" key="SettingsEditor" timestamp="1590324581202">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="279" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1590324581202" />
     <state x="473" y="168" width="713" height="546" key="find.popup" timestamp="1589257893036">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
