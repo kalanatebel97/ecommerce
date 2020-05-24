@@ -8,6 +8,7 @@ router.register(r'api/products', views.ProductViewSet, )
 router.register(r'api/categories', views.CategoryViewSet, )
 router.register(r'api/cart', views.CartViewSet, )
 router.register(r'api/cartItems', views.CartItemViewSet, )
+router.register(r'api/subCategories', views.SubCategoryViewSet, )
 
 urlpatterns = [
     path('index/',views.index , name = "index"),
@@ -15,7 +16,7 @@ urlpatterns = [
     # path('cart/',views.cart , name = "cart"),
     # path('checkout/',views.checkout , name = "checkout"),
     # path('login/',views.login , name = "login"),
-    # path('category/',views.category , name = "category"),
+    path('category/',views.subCategory , name = "category"),
     # path('single-product/',views.productDetails , name = "productDetails"),
     # path('cart/',views.cart , name = "cart"),
     # path('/products', ProductViewSet(), name ="products"),

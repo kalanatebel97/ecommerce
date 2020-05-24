@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f2088ed-7685-48ff-990e-9a07f629fc36" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/js/category_list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/ProductFilter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estore/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/estore/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estore/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/estore/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/templates/store/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/pagination.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -39,6 +40,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecommerceApp" />
   </component>
   <component name="RecentsManager">
@@ -69,10 +71,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588952229315" />
-    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1589211491220">
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1590298117424">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589211491220" />
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590298117424" />
     <state x="473" y="168" width="713" height="546" key="find.popup" timestamp="1589257893036">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

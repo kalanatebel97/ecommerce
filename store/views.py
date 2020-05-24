@@ -10,9 +10,12 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 from django.contrib.auth import login, authenticate
+
+from .ProductFilter import ProductSearchFilter
 from .forms import RegisterForm
-from .models import Product,Category,Cart,CartItem
-from .serializers import ProductSerializer,CategorySerializer,CartItemSerializer,CartSerializer
+from .models import Product, Category, Cart, CartItem, SubCategory
+from .serializers import ProductSerializer, CategorySerializer, CartItemSerializer, CartSerializer, \
+    SubCategorySerializer
 from .pagination import CategoryLimitPagination,CategoryPageNumberPagination,ProductLimitPagination,ProductPageNumberPagination
 
 def index(request):
@@ -35,9 +38,24 @@ def checkout(request):
     context = {}
     return render(request,'store/checkout.html',context)
 
-def category(request):
-    context = {}
-    return render(request,'store/category.html',context)
+# def category(request):
+#     context = {}
+#     return render(request,'store/category.html',context)
+
+def subCategory(request):
+    category_tree = []
+    categories = Category.objects.all()
+    category: Category
+    for category in categories:
+        sub_categories = category.subcategory_set.all()
+        category_tree_item = {"id": category.id, "title": category.title, "sub_categories": []}
+        for sub_category in sub_categories:
+            category_tree_item["sub_categories"].append({
+                "id": sub_category.id,
+                "title": sub_category.title,
+            })
+        category_tree.append(category_tree_item)
+    return render(request,'store/category.html',{'categories': category_tree})
 
 def productDetails(request):
     context = {}
@@ -69,14 +87,18 @@ class ProductViewSet(ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     pagination_class = ProductLimitPagination
-    filter_backends = (SearchFilter,OrderingFilter)
-    search_fields = ('name','description','category_id__title')
+    filter_backends = (ProductSearchFilter,OrderingFilter)
+    # search_fields = ('name','description','category_id__title')
     ordering_fields  = ('name','description','category_id__title')
 
 class CategoryViewSet(ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
     pagination_class = CategoryLimitPagination
+
+class SubCategoryViewSet(ModelViewSet):
+    queryset = SubCategory.objects.all()
+    serializer_class = SubCategorySerializer
 
 class CartViewSet(ModelViewSet):
     queryset = Cart.objects.all()
