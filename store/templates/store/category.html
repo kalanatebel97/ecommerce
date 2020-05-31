@@ -60,7 +60,8 @@
 					<div class="head">Browse Categories</div>
 					<ul class="main-categories" id="mainCategories">
 						{% for category in categories%}
-						<li class="main-nav-list"><a data-toggle="collapse" href="#cat-{{category.id}}" aria-expanded="false" aria-controls="cat-{{category.id}}"><span
+						<li class="main-nav-list"><a data-toggle="collapse" href="#cat-{{category.id}}" aria-expanded="false"
+												 	 data-category = "{{category.title}}" class = 'categoryTitle' aria-controls="cat-{{category.id}}"><span
 								 class="lnr lnr-arrow-right"></span>{{category.title}}<span class="number">(53)</span></a>
 							<ul class="collapse" id="cat-{{category.id}}" data-toggle="collapse" aria-expanded="false">
 								{% for sub_category in category.sub_categories%}
@@ -146,40 +147,41 @@
 				<!-- End Filter Bar -->
 				<!-- Start Best Seller -->
 				<section class="lattest-product-area pb-40" id="product-list-section">
+					<div id="single-product-template">
+						<div class="col-lg-4 col-md-6">
+							<div class="single-product">
+								<img class="img-fluid" src=" {% static 'img/product/p1.jpg' %}" alt="">
+								<div class="product-details">
+									<h6 class="single-product-name"></h6>
+									<div class="price">
+										<h6 class="single-product-price"></h6>
+									</div>
+									<div class="prd-bottom">
+
+										<a href="" class="social-info">
+											<span class="ti-bag"></span>
+											<p class="hover-text">add to bag</p>
+										</a>
+										<!--<a href="" class="social-info">-->
+										<!--<span class="lnr lnr-heart"></span>-->
+										<!--<p class="hover-text">Wishlist</p>-->
+										<!--</a>-->
+										<!--<a href="" class="social-info">-->
+										<!--<span class="lnr lnr-sync"></span>-->
+										<!--<p class="hover-text">compare</p>-->
+										<!--</a>-->
+										<a href="" class="social-info">
+											<span class="lnr lnr-move"></span>
+											<p class="hover-text">view more</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="row" id="product-list">
 						<!-- single product -->
-                        <div id="single-product-template">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="single-product">
-                                    <img class="img-fluid" src=" {% static 'img/product/p1.jpg' %}" alt="">
-                                    <div class="product-details">
-                                        <h6 class="single-product-name"></h6>
-                                        <div class="price">
-                                            <h6 class="single-product-price"></h6>
-                                        </div>
-                                        <div class="prd-bottom">
 
-                                            <a href="" class="social-info">
-                                                <span class="ti-bag"></span>
-                                                <p class="hover-text">add to bag</p>
-                                            </a>
-                                            <!--<a href="" class="social-info">-->
-                                                <!--<span class="lnr lnr-heart"></span>-->
-                                                <!--<p class="hover-text">Wishlist</p>-->
-                                            <!--</a>-->
-                                            <!--<a href="" class="social-info">-->
-                                                <!--<span class="lnr lnr-sync"></span>-->
-                                                <!--<p class="hover-text">compare</p>-->
-                                            <!--</a>-->
-                                            <a href="" class="social-info">
-                                                <span class="lnr lnr-move"></span>
-                                                <p class="hover-text">view more</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 					</div>
 				</section>
 				<!-- End Best Seller -->
@@ -433,6 +435,7 @@
 	<script src=" {% static 'js/gmaps.min.js' %}"></script>
 	<script src=" {% static 'js/main.js' %}"></script>
 	<script src=" {% static 'js/products_list.js' %}"></script>
+	<script src=" {% static 'js/product_filter.js' %}"></script>
 	{% endblock %}
 
 </body>
