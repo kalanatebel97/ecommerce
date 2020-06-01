@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f2088ed-7685-48ff-990e-9a07f629fc36" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/product_filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/product_filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/single_product.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/single_product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/templates/store/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/templates/store/single-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="3f2088ed-7685-48ff-990e-9a07f629fc36" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
