@@ -58,8 +58,8 @@ def subCategory(request):
     return render(request,'store/category.html',{'categories': category_tree})
 
 def productDetails(request):
-    context = {}
-    return render(request,'store/single-product.html',context)
+    category = Category();
+    return render(request,'store/product.html',{'category' : category})
 
 def cart(request):
     context = {}
@@ -115,3 +115,4 @@ class CartViewSet(ModelViewSet):
 class CartItemViewSet(ModelViewSet):
     queryset = CartItem.objects.all()
     serializer_class = CartItemSerializer
+

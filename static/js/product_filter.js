@@ -26,12 +26,13 @@ function productFilter(categoryTitle){
         url: url,
         datatype: 'json',
         success: function (data) {
-            // singleProductEl.show();
             productListEl.empty();
             let products = data.results;
             $.each(products, function (index, product) {
                 singleProductEl.find('h6.single-product-name').text(product.name);
                 singleProductEl.find('h6.single-product-price').text(product.price);
+                singleProductEl.find('#viewMore').text(product.id);
+                singleProductEl.find('').text(product.id);
                 productListEl.append(singleProductEl.html());
             });
 
