@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f2088ed-7685-48ff-990e-9a07f629fc36" name="Default Changelist" comment="" />
+    <list default="true" id="3f2088ed-7685-48ff-990e-9a07f629fc36" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/product_filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/product_filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/single_product.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/single_product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/single-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +23,11 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>product</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,11 +80,12 @@
       <workItem from="1590375999965" duration="2509000" />
       <workItem from="1590921548849" duration="10318000" />
       <workItem from="1590994936292" duration="7599000" />
+      <workItem from="1591068383220" duration="11435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28198000" />
+    <option name="totallyTimeSpent" value="39633000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />

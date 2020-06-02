@@ -74,17 +74,15 @@
 				</div>
 
 				<div id = "single-product-template" class="col-lg-5 offset-lg-1">
-					<div class="s_product_text">
-						<input type="hidden" class="categoryTitle" data-category = "{{category.title}}">
-						<h3></h3>
-						<h2></h2>
+					<div id="product_name" class="s_product_text" data-product="{{product.id}}">
+						<input type="hidden" class="categoryTitle" data-category = "{{product.category_id}}">
+						<h3 class="product-name"></h3>
+						<h2 class="product-price"></h2>
 						<ul class="list">
-							<li><a class="active" href="#"><span>Category</span>{{category.title}}</a></li>
+							<li><a id= "category-title" data-cat = "{{category.title}}" class="active" ><span>Category</span></a></li>
 							<li><a href="#"><span>Availibility</span> : In Stock</a></li>
 						</ul>
-						<p>Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for
-							something that can make your interior look awesome, and at the same time give you the pleasant warm feeling
-							during the winter.</p>
+						<p class="product-description"></p>
 						<div class="product_count">
 							<label for="qty">Quantity:</label>
 							<input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
@@ -589,7 +587,7 @@
 	<script src=" {% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE' %}"></script>
 	<script src=" {% static 'js/gmaps.min.js' %}"></script>
 	<script src=" {% static 'js/main.js' %}"></script>
-	<!--<script src=" {% static 'js/single_product.js' %}"></script>-->
+	<script src=" {% static 'js/single_product.js' %}"></script>
 	{% endblock %}
 
 </body>

@@ -31,8 +31,9 @@ function productFilter(categoryTitle){
             $.each(products, function (index, product) {
                 singleProductEl.find('h6.single-product-name').text(product.name);
                 singleProductEl.find('h6.single-product-price').text(product.price);
-                singleProductEl.find('#viewMore').text(product.id);
-                singleProductEl.find('').text(product.id);
+                // singleProductEl.find('#viewMore').text(product.id);
+                // singleProductEl.find('').text(product.id);
+                $("#social-info").attr("href",'/single-product/'+product.id)
                 productListEl.append(singleProductEl.html());
             });
 

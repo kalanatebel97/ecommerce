@@ -40,9 +40,9 @@ def checkout(request):
 
 # def category(request):
 #     context = {}
-#     return render(request,'store/category.html',context)
+#     return render(request,'store/products.html',context)
 
-def subCategory(request):
+def categoryList(request):
     category_tree = []
     categories = Category.objects.all()
     category: Category
@@ -55,11 +55,13 @@ def subCategory(request):
                 "title": sub_category.title,
             })
         category_tree.append(category_tree_item)
-    return render(request,'store/category.html',{'categories': category_tree})
+    return render(request,'store/products.html',{'categories': category_tree})
 
-def productDetails(request):
-    category = Category();
-    return render(request,'store/product.html',{'category' : category})
+def productDetails(request,product_id):
+    product = Product.objects.get(pk= product_id)
+    categoryTitle = product.category_id.title
+
+    return render(request,'store/single-product.html',{'product': product,'category' : categoryTitle})
 
 def cart(request):
     context = {}
@@ -70,14 +72,6 @@ def register(response):
         form = RegisterForm(response.POST)
         if form.is_valid():
               form.save()
-              # username = form.cleaned_data.get('username')
-              # first_name = form.cleaned_data.get('first_name')
-              # last_name = form.cleaned_data.get('last_name')
-              # email = form.cleaned_data.get('email')
-              # mobile_number = form.cleaned_data.get('mobile_number')
-              # city = form.cleaned_data.get('city')
-              # raw_password = form.cleaned_data.get('password1')
-              # user = authenticate(username=username, password=raw_password)
         return redirect('/login')
     else:
         form = RegisterForm()
