@@ -6,7 +6,17 @@ $(document).ready(function () {
     var url = apiUrl += productId;
     let productListEl = $('#product-list');
     let singleProductEl = $('#single-product-template');
+    var cartItemUrl = 'http://127.0.0.1:8000/api/cartItems/';
+    // var cartItemUrl = cartUrl + '/';
     // singleProductEl.hide();
+
+
+    $('#addToCart').on("click",function () {
+        var quantity = $('#sst').val();
+        // console.log(productId,quantity);
+        addToCart(productId,quantity);
+
+    })
 
     $.ajax({
 
@@ -26,5 +36,20 @@ $(document).ready(function () {
         }
 
     });
+    console.log('USER',user);
+
+    function addToCart(productId,quantity){
+        $.ajax({
+            type : 'POST',
+            url : cartItemUrl,
+            datatype: 'json',
+            headers : {'X-CSRFToken':csrftoken},
+            data : {'productId' : productId,'quantity': quantity},
+            success: function (data) {
+
+            }
+        });
+
+    }
 
 });

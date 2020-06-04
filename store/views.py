@@ -1,6 +1,7 @@
 from django.contrib.auth.forms import UserCreationForm
 from django.http import response, request
 from django.shortcuts import render, redirect
+from django.views.decorators.csrf import csrf_exempt
 from rest_framework.decorators import action
 from rest_framework.filters import SearchFilter,OrderingFilter
 from rest_framework.generics import ListAPIView, RetrieveUpdateDestroyAPIView, ListCreateAPIView
@@ -13,7 +14,7 @@ from django.contrib.auth import login, authenticate
 
 from .ProductFilter import ProductSearchFilter
 from .forms import RegisterForm
-from .models import Product, Category, Cart, CartItem, SubCategory
+from .models import Product, Category, Cart, CartItem, SubCategory,CustomUser
 from .serializers import ProductSerializer, CategorySerializer, CartItemSerializer, CartSerializer, \
     SubCategorySerializer
 from .pagination import CategoryLimitPagination,CategoryPageNumberPagination,ProductLimitPagination,ProductPageNumberPagination
@@ -82,7 +83,6 @@ class ProductViewSet(ModelViewSet):
     serializer_class = ProductSerializer
     pagination_class = ProductLimitPagination
     filter_backends = (ProductSearchFilter,OrderingFilter)
-    # search_fields = ('name','description','category_id__title')
     ordering_fields  = ('name','description','category_id__title')
 
 class CategoryViewSet(ModelViewSet):
@@ -105,8 +105,25 @@ class CartViewSet(ModelViewSet):
         serializer = self.get_serializer(queryset, many=False)
         return Response(serializer.data)
 
-
 class CartItemViewSet(ModelViewSet):
     queryset = CartItem.objects.all()
     serializer_class = CartItemSerializer
+
+    def create(self, request, *args, **kwargs):
+        cart = Cart.objects.get(user=request.user)
+        product = Product.objects.get(pk=request.data['productId'])
+        quantity = request.data['quantity']
+        print(request.data['productId'],request.data['quantity']);
+
+        cartItem = CartItem(product=product, quantity=quantity, cart=cart)
+        cartItem.save()
+        serializer = self.get_serializer(cartItem, many=False)
+        return Response(serializer.data)
+
+
+
+
+
+
+
 

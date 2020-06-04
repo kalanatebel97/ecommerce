@@ -14,7 +14,7 @@ router.register(r'api/subCategories', views.SubCategoryViewSet, )
 urlpatterns = [
     path('index/',views.index , name = "index"),
     # path('store/',views.store , name = "store"),
-    # path('cart/',views.cart , name = "cart"),
+    path('cart/',views.cart , name = "cart"),
     # path('checkout/',views.checkout , name = "checkout"),
     # path('login/',views.login , name = "login"),
     path('products/',views.categoryList , name = "category"),
