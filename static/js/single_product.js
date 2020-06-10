@@ -2,7 +2,8 @@ $(document).ready(function () {
     var apiUrl = 'http://127.0.0.1:8000/api/products/';
     var productId = $('#product_name').attr('data-product');
     var productCategory = $('#category-title').attr('data-cat');
-    console.log(productId);
+    var productPrice = $('.productPrice').attr('data-price');
+    console.log(productPrice);
     var url = apiUrl += productId;
     let productListEl = $('#product-list');
     let singleProductEl = $('#single-product-template');
@@ -13,8 +14,9 @@ $(document).ready(function () {
 
     $('#addToCart').on("click",function () {
         var quantity = $('#sst').val();
-        // console.log(productId,quantity);
-        addToCart(productId,quantity);
+        var totalPrice = quantity * productPrice
+            // console.log(productId,quantity);
+        addToCart(productId,quantity,totalPrice);
 
     })
 
@@ -38,13 +40,14 @@ $(document).ready(function () {
     });
     console.log('USER',user);
 
-    function addToCart(productId,quantity){
+
+    function addToCart(productId,quantity,totalPrice){
         $.ajax({
             type : 'POST',
             url : cartItemUrl,
             datatype: 'json',
             headers : {'X-CSRFToken':csrftoken},
-            data : {'productId' : productId,'quantity': quantity},
+            data : {'productId' : productId,'quantity': quantity,'totalPrice': totalPrice},
             success: function (data) {
 
             }

@@ -112,10 +112,12 @@ class CartItemViewSet(ModelViewSet):
     def create(self, request, *args, **kwargs):
         cart = Cart.objects.get(user=request.user)
         product = Product.objects.get(pk=request.data['productId'])
-        quantity = request.data['quantity']
-        print(request.data['productId'],request.data['quantity']);
-
-        cartItem = CartItem(product=product, quantity=quantity, cart=cart)
+        # productPrice = Product.objects.get(pk=request.data['total_price'])
+        productPrice = request.data['totalPrice']
+        quantity = int(request.data['quantity'])
+        # print(request.data['productId'],request.data['quantity']);
+        totalPrice = productPrice * quantity;
+        cartItem = CartItem(product=product, quantity=quantity, cart=cart,total_price = totalPrice)
         cartItem.save()
         serializer = self.get_serializer(cartItem, many=False)
         return Response(serializer.data)

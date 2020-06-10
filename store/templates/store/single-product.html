@@ -15,7 +15,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Karma Shop</title>
+	<title>Ceylon Giftery</title>
 	<!--
 			CSS
 			============================================= -->
@@ -97,6 +97,7 @@
 				<div id = "single-product-template" class="col-lg-5 offset-lg-1">
 					<div id="product_name" class="s_product_text" data-product="{{product.id}}">
 						<input type="hidden" class="categoryTitle" data-category = "{{product.category_id}}">
+						<input type="hidden" class="productPrice" data-price = "{{product.price}}">
 						<h3 class="product-name"></h3>
 						<h2 class="product-price"></h2>
 						<ul class="list">
@@ -114,8 +115,8 @@
 						</div>
 						<div class="card_area d-flex align-items-center">
 							<a id = "addToCart" class="primary-btn" href="#">Add to Cart</a>
-							<a class="icon_btn" href="#"><i class="lnr lnr lnr-diamond"></i></a>
-							<a class="icon_btn" href="#"><i class="lnr lnr lnr-heart"></i></a>
+							<!--<a class="icon_btn" href="#"><i class="lnr lnr lnr-diamond"></i></a>-->
+							<!--<a class="icon_btn" href="#"><i class="lnr lnr lnr-heart"></i></a>-->
 						</div>
 					</div>
 				</div>
