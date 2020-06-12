@@ -3,8 +3,71 @@
   <component name="ChangeListManager">
     <list default="true" id="3f2088ed-7685-48ff-990e-9a07f629fc36" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/cart_items.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/comingsoon_main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/countdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/gmaps.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/ion.rangeSlider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/jquery.ajaxchimp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/jquery.magnific-popup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/jquery.nice-select.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/jquery.sticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/loginform_validation" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/nouislider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/parallax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/product_filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/products_list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/single_product.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/tilt.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/vendor/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/vendor/countdowntime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/vendor/jquery-2.2.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/vendor/moment-timezone-with-data.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/vendor/moment-timezone.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/vendor/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/vendor/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/js/vendor/select2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/availability-calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/bootstrap.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/comingsoon_main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/ion.rangeSlider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/ion.rangeSlider.skinFlat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/jquerysctipttop.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/linearicons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/magnific-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/main.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/main.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/nice-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/nouislider.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/themify-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/util.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/css/variables.less" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
