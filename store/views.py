@@ -42,6 +42,9 @@ def checkout(request):
 # def category(request):
 #     context = {}
 #     return render(request,'store/products.html',context)
+def comingsoon(response):
+    context = {}
+    return render(response,'store/comingsoon.html',context)
 
 def categoryList(request):
     category_tree = []
