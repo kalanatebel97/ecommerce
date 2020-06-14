@@ -3,7 +3,7 @@ $(document).ready(function () {
     let singleProductEl = $('#single-product-template');
     $.ajax({
         type: 'GET',
-        url: 'http://127.0.0.1:8000/api/products/',
+        url: '/api/products/',
         datatype: 'json',
         success: function (data) {
             productListEl.empty();
